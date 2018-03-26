@@ -64,7 +64,7 @@ type Result struct {
     Message string `json:"message"`
 }
 
-func handler(res Result, w http.ResponseWriter, r *http.Request) {
+func handler(res *Result, w http.ResponseWriter, r *http.Request) {
     fmt.Fprintf(w, res.Message)
 }
 ```
